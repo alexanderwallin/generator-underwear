@@ -4,12 +4,11 @@
   "description": "<%= project.description %>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
     "lint": "npm run lint:js && npm run lint:scss",
     "lint:js": "<%= scripts.eslint %>",
     "lint:scss": "<%= scripts.sasslint %>",
     "release": "npm version",
-    "preversion": "npm test && npm lint",
+    "preversion": "npm lint",
     "postversion": "npm publish"
   },
   "repository": {

@@ -82,13 +82,19 @@ module.exports = generators.Base.extend({
 
     if (this.project.eslint === 'airbnb') {
       this.template('.eslintrc', `.eslintrc`, this.templateData);
-      this.templateData.scripts.eslint = './node_modules/.bin/eslint';
+      this.templateData.scripts.eslint = './node_modules/.bin/eslint ./**/*.js';
       this.npmInstall(['eslint', 'eslint-config-airbnb'], { saveDev: true });
+    }
+    else {
+      this.templateData.scripts.eslint = 'echo \"No js linting available\"';
     }
 
     if (this.project.sasslint === 'sass-lint') {
       this.template('.sass-lint.yml', `.sass-lint.yml`, this.templateData);
-      this.templateData.scripts.sasslint = './node_modules/.bin/sass-lint';
+      this.templateData.scripts.sasslint = './node_modules/.bin/sass-lint -vq ./**/*.scss';
+    }
+    else {
+      this.templateData.scripts.sasslint = 'echo \"No scss linting available\"';
     }
 
     this.template('package.json', `package.json`, this.templateData);
