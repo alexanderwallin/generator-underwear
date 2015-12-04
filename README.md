@@ -1,5 +1,5 @@
-[![view on npm](http://img.shields.io/npm/v/transifex-api-es6.svg)](https://www.npmjs.org/package/transifex-api-es6)
-[![Dependency Status](https://david-dm.org/alexanderwallin/transifex-api-es6.svg)](https://david-dm.org/alexanderwallin/transifex-api-es6)
+[![view on npm](http://img.shields.io/npm/v/generator-underwear.svg)](https://www.npmjs.org/package/generator-underwear)
+[![Dependency Status](https://david-dm.org/alexanderwallin/generator-underwear.svg)](https://david-dm.org/alexanderwallin/generator-underwear)
 
 # generator-underwear
 
