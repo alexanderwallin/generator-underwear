@@ -1,0 +1,33 @@
+{
+  "name": "generator-underwear",
+  "version": "1.0.0",
+  "description": "A project setup to put on before any fancy source pants or stylish shoes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderwallin/generator-underwear.git"
+  },
+  "keywords": [
+    "yeoman",
+    "generator",
+    "yeoman-generator",
+    "skeleton",
+    "project",
+    "setup",
+    "module",
+    "package"
+  ],
+  "author": "Alexander Wallin <office@alexanderwallin.com> (http://alexanderwallin.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexanderwallin/generator-underwear/issues"
+  },
+  "homepage": "https://github.com/alexanderwallin/generator-underwear#readme",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "yeoman-generator": "^0.21.1"
+  }
+}
