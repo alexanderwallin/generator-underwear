@@ -4,7 +4,8 @@
   "description": "A project setup to put on before any fancy source pants or stylish shoes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "npm version -m \"Updates version to %s\"",
+    "postversion": "npm publish && git push && git push --tags"
   },
   "repository": {
     "type": "git",
